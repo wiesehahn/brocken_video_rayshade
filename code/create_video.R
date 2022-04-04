@@ -277,7 +277,7 @@ save_snapshot = function(image, angle, titletext, alphavalues){
     #clamp_value=2,
     width = 1280,
     height = 720,
-    filename = here::here(videopath, paste0("videoframe_", i, ".png")))
+    filename = here::here(videopath, "frames", paste0("videoframe_", i, ".png")))
   
   rgl::rgl.close()
 }
@@ -303,7 +303,7 @@ print(end_time - start_time)
 
 
 #### create video ####
-av::av_encode_video(sprintf(here::here(videopath, "videoframe_%d.png"),seq(1,num_frames,by=1)), 
+av::av_encode_video(sprintf(here::here(videopath, "frames", "videoframe_%d.png"),seq(1,num_frames,by=1)), 
                     framerate = fps, 
                     output = here::here(videopath, videoname))
 
