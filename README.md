@@ -1,4 +1,4 @@
-# Video Forest Disturbances Brocken
+# Forest Disturbances Brocken - Video
 
 **Project to render a short video which shows forest disturbances around the Brocken mountain**
 
